@@ -19,6 +19,8 @@ import org.springframework.web.server.ResponseStatusException;
 import com.example.teste.junior.entity.Usuario;
 import com.example.teste.junior.service.UsuarioService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/usuario")
 public class UsuarioController {
@@ -31,7 +33,7 @@ public class UsuarioController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Usuario salvar(@RequestBody Usuario usuario) {
+    public Usuario salvar(@Valid @RequestBody Usuario usuario) {
         return usuarioService.salvar(usuario);
     }
 
