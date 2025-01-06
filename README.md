@@ -1,8 +1,10 @@
 # API de Usuários e Transações
 
 # Instalação
-Clonar Repositorio
+Clonar Repositório
+```git
 git clone https://github.com/ArmandoJunior00/Teste-Junior.git
+```
 
 # Funcionalidades 
 * **Cadastro de Usuários**: Criação de usuários com informações como nome, CPF e idade.
